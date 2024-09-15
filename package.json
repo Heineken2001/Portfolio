@@ -46,5 +46,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "proxy": "https://main.d1nb6g88a6q7ek.amplifyapp.com/"
 }

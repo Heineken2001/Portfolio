@@ -22,7 +22,7 @@ function ResumeNew() {
         <Row style={{ justifyContent: "center", position: "relative" }}>
           <Button
             variant="primary"
-            href={pdf}
+            href="https://huyportfoliobucket.s3.ap-southeast-1.amazonaws.com/HuyTranNhatResume.pdf"
             target="_blank"
             style={{ maxWidth: "250px" }}
           >
@@ -32,7 +32,11 @@ function ResumeNew() {
         </Row>
 
         <Row className="resume">
-          <Document file={pdf} className="d-flex justify-content-center">
+          <Document
+            file={pdf}
+            className="d-flex justify-content-center"
+          >
+            {/* You can render multiple pages by increasing pageNumber */}
             <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
           </Document>
         </Row>
@@ -40,7 +44,7 @@ function ResumeNew() {
         <Row style={{ justifyContent: "center", position: "relative" }}>
           <Button
             variant="primary"
-            href={pdf}
+            href="https://huyportfoliobucket.s3.ap-southeast-1.amazonaws.com/HuyTranNhatResume.pdf"
             target="_blank"
             style={{ maxWidth: "250px" }}
           >
@@ -54,3 +58,4 @@ function ResumeNew() {
 }
 
 export default ResumeNew;
+
